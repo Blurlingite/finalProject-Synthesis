@@ -5,13 +5,13 @@
   <head>
     
     <style>
+    
 
-
-      .center {
+    /*  .center {
        margin-left:auto;
        margin-right:auto;
        background-color: dodgerblue;
-   	}
+   	}*/
       
       th {
       	font-size: 20px;
@@ -19,6 +19,8 @@
       
 
     }
+
+    
 
       tr {
       	text-align:center;
@@ -28,14 +30,34 @@
       	text-align:center;
     }
 
+#tdHeader{
+	text-align: center;
+}
+
+#thSub{
+	text-align: center;
+}
+
+#thSub2{
+	text-align: center;
+}
+
+
+.withinTable{
+	border: 12px solid black;
+	position: relative;
+	top: 700px;
+}
+
+
+
 /* styles the th tags of the bootstrap defined table that has the "table" class */
 
-      .table th {
+ /*     .table th  {   
    text-align: center;
-	}
+	}*/
 
-  .table thead {
-   text-align: center;
+  .table thead {          /*styles the Tour Date table's header (the container only) */
    background-color: #42f47d; 
 
 	}
@@ -45,10 +67,6 @@
     text-align: center;
     	
  	}
-
-   .bev{
-      text-align: center;
-    }
 
     /*Remove table borders for bootstrap tables*/
 
@@ -75,7 +93,7 @@
   
   <body>
     
-    <h1>Synthesis</h1>
+   <h1 style = " font-family: grado, san-serif, Helvetica;">Synthesis</h1>
     
    	 <hr />
     
@@ -89,33 +107,44 @@
 
     </div>
 
-    <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="tourDates.html">Tour Dates</a></li>
-    <li><a href="contactUs.html">Contact Us</a></li>
-  </ul>
-</div>
+  
+
+    <div class="dropdown" style = "position:relative; left: 990px">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Dropdown
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tourDates.html">Tour Dates</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+
 
     <div id = "main">
 
   	<div class = "content">
-  	
 
+<!-- 	<div class = "image withinTable">
+  			<img class ="nb col-sm-4 img-fluid imgLeft" src="images/restaurant.jpg" alt="pic of restaurant"   />
+
+  	</div> -->
+ 
 <!-- Tour Dates table
   -->
 			<table class = "table table-borderless">
 
+<img class ="nb col-sm-4 img-fluid " src="images/restaurant.jpg" alt="pic of restaurant"   />
+
 				<thead> 
-					<th colspan = "2">Tour Dates</th>		
+					<th id = "tdHeader" colspan = "2">Tour Dates</th>		
 				</thead>
 <!-- try to use a position: sticky here so the location and date can be seen when you scroll -->
-					<th>Location</th>
-					<th>Date</th>
+
+					<th id = "thSub">Location</th></div>
+					<th id = "thSub2">Date</th>
+
 
 		   			 <tr>
 	    				<td>Starlight Theatre Kansas City, MO</td>
@@ -175,15 +204,17 @@
 	    				<td>PNC Music Pavilion Charlotte, NC</td>
 	    				<td>JUL 20, 2018</td>
 	 		 		 </tr>
+	 		 	
 
 			</table>
 
 	</div>
 
+
+
 		<br/><br/><br/><br/>
 
-	</div>
-
+	
 	  <!-- bootstrap -->
   
   <meta charset="utf-8">

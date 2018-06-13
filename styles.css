@@ -8,15 +8,20 @@ src: url(fonts/GradoGradooNF.otf);
 }
 
 h1, footer {
-	text-align: center;
+  text-align: center;
 }
 
 footer{
   color: white;
 }
 
-h1, .des{
+h1, .des, .textW, .contactW{
   font-family: grado, san-serif, Helvetica;   /*gets the font defined in @font-face*/
+}
+
+.des2{
+  font-family: Bookman, Palatino, Courier New;  
+  color: white; 
 }
 
 a{
@@ -26,16 +31,16 @@ a{
 }
 
 a:visited {
-	color: white;
+  color: white;
 }
 a:hover {
 
-	font-weight: bold;
-	}
+  font-weight: bold;
+  }
 
 a:active {
 
-	text-decoration: none;
+  text-decoration: none;
 
 }
 
