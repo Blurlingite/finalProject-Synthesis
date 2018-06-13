@@ -5,27 +5,39 @@
 
     <!-- use position: relative; to move elements around see: https://www.w3schools.com/cssref/pr_class_position.asp -->
     
-<<<<<<< HEAD
-    	<style>
-=======
-      <style>
->>>>>>> 87e9c9bfbd52cd2bf19a9a25524ec013d75fad88
 
-      #dd{position:relative;
-        right:5%;
+      <style>
+
+
+
+      h1{
+        color: white;
       }
- 
+
+
+     /* #dd{position:relative;
+        right:5%;
+
+      }
+ */
 
   .imgLeft, .imgRight {
       position: relative;
       width: 300px;
       height: 300px;
+      z-index: 2;        /*positions the left and right images on top of the center image. "2" is the elements' stack number. Elements with higher stack numbers will be on top of the ones with lower stack numbers */
 
     }
 
-  /*  #main{
-      background-color: lightblue;
-    }*/
+    .imgCenter{
+      position: absolute;
+      right: -100px;
+      width: 600px;
+      height: 300px;
+      z-index: 1; 
+
+    }
+
  
     .lk1 {
       padding-right:50px;
@@ -42,11 +54,20 @@
       font-family: "serif",Times, Arial;
     }
 
-   /*.jjj{*/
-   /*position: center;*/
-    /*width: 300px;
+   .vid{
+   position: center;
+   top: 100px;
+   /* width: 300px;
     height: 300px;*/
-   /*}*/
+   }
+
+   #yyy{           /*styles the drop down button*/
+   /* background-color: #1d0d13*/
+ background-color: #4a2231;
+
+
+    border: none;
+   }
 
 
    
@@ -92,10 +113,10 @@
     </div>
 
 
-    <div class="dropdown" id = "dd">
-      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      Dropdown
-      <span class="caret"></span>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      
+     <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <li><a href="index.html">Home</a></li>
@@ -112,25 +133,35 @@
 
 
 
+
+
+
+
+
+
     
     <div id = "main">
 
       <div class = "container">
     <div class = "image">
 
-        <img class ="nb col-sm-4 img-fluid imgLeft" src="images/restaurant.jpg" alt="pic of restaurant"   />
+        <img class ="nb col-sm-4 img-fluid imgLeft" src="images/synthesis.jpg" alt="Synthesis album art"   />
 
-        <div class = "nb col-sm-4"> 
+        <div class = "nb col-sm-4" style = "background-color:green;"> 
 
 
-          <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
-          </iframe>  <!-- iframe embeds a youtube video (you need to follow the format: "https://www.youtube.com/embed/[video id]") The video id is the part after the "=" in the youtube video url
+            <img class =" img-fluid imgCenter" src="images/Picture1.png" alt="Synthesis album art"   />
+
+
+          <!-- <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
+          </iframe> -->
+            <!-- iframe embeds a youtube video (you need to follow the format: "https://www.youtube.com/embed/[video id]") The video id is the part after the "=" in the youtube video url
 
           "allowfullscreen" lets you open the video to the entirre screen -->
 
         </div>  
 
-        <img class ="nb col-sm-4 img-fluid imgRight" src="images/restaurant.jpg" alt="pic of restaurant"  />
+        <img class ="nb col-sm-4 img-fluid imgRight" src="images/braveEnough2.jpg" alt="Brave Enough album art"  />
 
         <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
 
@@ -145,11 +176,10 @@
         <div class = "container">
 
           <div class = "nb col-sm-4">
-<<<<<<< HEAD
-      	   <h2 class = "des">About Evanescence</h2> <br/> 
-=======
+
+      	   
            <h2 class = "des">About Evanescence</h2> <br/> 
->>>>>>> 87e9c9bfbd52cd2bf19a9a25524ec013d75fad88
+
           
           
 
@@ -176,44 +206,64 @@
            </div>
 
 
-        <div class =  "nb col-sm-4 jjj">
+        <div class = "nb col-sm-4 vid">
 
-          <iframe class = "jjj" src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
+          <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
           </iframe>
 
-        </div>    
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+            <iframe src="https://www.youtube.com/embed/rgJeWR-dkQA" allowfullscreen>
+          </iframe>
+
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+            <iframe src="https://www.youtube.com/embed/aurI_4OxU-M" allowfullscreen>
+          </iframe>
+
+           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+           <iframe src="https://www.youtube.com/embed/C7GEhMee_u0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+
+        </div>   
+
+
 
          <div class = "nb col-sm-4">
            <h2 class = "des">About Lindsey Stirling</h2> <br/> 
              
 
-        <p class = "des2">
-          Lindsey Stirling (born September 21, 1986) is an American violinist, dancer, performance artist, and composer. She presents choreographed violin performances, both live and in music videos found on her eponymous YouTube channel, which she created in 2007.
+            <p class = "des2">
+              Lindsey Stirling (born September 21, 1986) is an American violinist, dancer, performance artist, and composer. She presents choreographed violin performances, both live and in music videos found on her eponymous YouTube channel, which she created in 2007.
 
-           <br><br>
+              <br><br>
 
-          Stirling performs a variety of music styles, from classical to pop and rock to electronic dance music. Aside from original work, her discography contains covers of songs by other musicians and various soundtracks. Her music video "Crystallize" finished as the eighth-most watched video of 2012, and her cover version of "Radioactive" with Pentatonix won Response of the Year in the first YouTube Music Awards in 2013. Stirling achieved one million singles sold worldwide by August 2014. As of September 30, 2017, her Lindseystomp YouTube channel exceeded 10 million subscribers and over 2 billion total views.
+              Stirling performs a variety of music styles, from classical to pop and rock to electronic dance music. Aside from original work, her discography contains covers of songs by other musicians and various soundtracks. Her music video "Crystallize" finished as the eighth-most watched video of 2012, and her cover version of "Radioactive" with Pentatonix won Response of the Year in the first YouTube Music Awards in 2013. Stirling achieved one million singles sold worldwide by August 2014. As of September 30, 2017, her Lindseystomp YouTube channel exceeded 10 million subscribers and over 2 billion total views.
 
-           <br><br>
+              <br><br>
 
-          Stirling has been named in Forbes magazine's 30 Under 30 In Music: The Class Of 2015. Forbes notes her quarter-finalist position on America's Got Talent season five in 2010, a No. 2 position on the Billboard 200 for her second album Shatter Me in 2014, and her 9 million subscribers on YouTube.
+              Stirling has been named in Forbes magazine's 30 Under 30 In Music: The Class Of 2015. Forbes notes her quarter-finalist position on America's Got Talent season five in 2010, a No. 2 position on the Billboard 200 for her second album Shatter Me in 2014, and her 9 million subscribers on YouTube.
 
-           <br><br>
+               <br><br>
 
-          Stirling's eponymous debut album was a commercial success in Europe, selling 200,000 copies in Germany, winning a platinum certification; three additional certifications were given by Austria, Switzerland and Poland. The debut album was nominated for the 2014 Billboard Music Awards for Top Dance/Electronic Albums. Stirling's second album Shatter Me won the 2015 Billboard Music Awards for Top Dance/Electronic Album.
+              Stirling's eponymous debut album was a commercial success in Europe, selling 200,000 copies in Germany, winning a platinum certification; three additional certifications were given by Austria, Switzerland and Poland. The debut album was nominated for the 2014 Billboard Music Awards for Top Dance/Electronic Albums. Stirling's second album Shatter Me won the 2015 Billboard Music Awards for Top Dance/Electronic Album.
 
-           <br><br>
+              <br><br>
 
-          Stirling's first tour in 2012-2013 lasted almost a year with 122 dates around North America, Europe, Asia, and Australia. The Lindsey Stirling Tour began three days before the CD release of her first album, Lindsey Stirling. Her tour began in 2012 with dates in North America within the United States and Canada. At the beginning of 2013, Stirling continued her tour in Europe as a "test tour". Her official European leg kicked off in Russia on May 22, 2013. In August 2013, she continued her tour, adding dates around Asia and Australia. Finishing her tour, Stirling added a last date in the UK on September 4, 2013. The shows were a success in that 46 dates were sold out, and on Ticketmaster.com the audience gave a rating to the tour of 4.8 out of 5 stars.
+             Stirling's first tour in 2012-2013 lasted almost a year with 122 dates around North America, Europe, Asia, and Australia. The Lindsey Stirling Tour began three days before the CD release of her first album, Lindsey Stirling. Her tour began in 2012 with dates in North America within the United States and Canada. At the beginning of 2013, Stirling continued her tour in Europe as a "test tour". Her official European leg kicked off in Russia on May 22, 2013. In August 2013, she continued her tour, adding dates around Asia and Australia. Finishing her tour, Stirling added a last date in the UK on September 4, 2013. The shows were a success in that 46 dates were sold out, and on Ticketmaster.com the audience gave a rating to the tour of 4.8 out of 5 stars.
 
-           <br><br>
+              <br><br>
 
-          In 2014 and 2015, Stirling played the Shatter Me World Tour and The Music Box Tour. The 2014 North and European American leg of Lindsey Stirling's tour consisted of her performing 77 shows over a five-month time span. For 2015, Stirling did 67 shows over five continents. Stirling toured around North America, Europe, Asia, Oceania and South America, being her first time to present a show on this continent. In December 2014, it was confirmed that more than 200,000 people had attended Stirling's shows, more than half of them being from the European continent.
+              In 2014 and 2015, Stirling played the Shatter Me World Tour and The Music Box Tour. The 2014 North and European American leg of Lindsey Stirling's tour consisted of her performing 77 shows over a five-month time span. For 2015, Stirling did 67 shows over five continents. Stirling toured around North America, Europe, Asia, Oceania and South America, being her first time to present a show on this continent. In December 2014, it was confirmed that more than 200,000 people had attended Stirling's shows, more than half of them being from the European continent.
 
-           <br><br>
+              <br><br>
 
-           After a spending 9 months writing the Brave Enough album , Stirling started her tour in 2016 for the album. Stirling continued throughout Europe and Latin America with her last show in Guadalajara, Mexico.
-        </p>
+              After a spending 9 months writing the Brave Enough album , Stirling started her tour in 2016 for the album. Stirling continued throughout Europe and Latin America with her last show in Guadalajara, Mexico.
+            </p>
 
         </div>
       </div>

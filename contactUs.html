@@ -3,14 +3,15 @@
   <head>
     <style>
 
-.textW{
+   #yyy{           /*styles the drop down button*/
+   /* background-color: #1d0d13*/
+ background-color: #4a2231;
 
-  color: white;
-}
 
+    border: none;
+   }
 .contactW{
   text-align: center;
-  color: white;
 }
 
     </style>
@@ -33,7 +34,7 @@
 
     <hr />
 
-    <div id = "navigation">
+    <!-- <div id = "navigation">
 
       <span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> <u>Home</u></a></span>
       <span class ="nb col-sm-4"><a class = "lk1" href = "tourDates.html" target = _blank><u>Tour Dates</u></a></span>
@@ -43,19 +44,19 @@
       
 
 
-    </div>
+    </div> -->
 
-     <div class="dropdown" style = "position:relative; left: 990px">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="tourDates.html">Tour Dates</a></li>
-    <li><a href="contactUs.html">Contact Us</a></li>
-  </ul>
-</div>
+     <div class="dropdown" style = "position:relative; left: 1014px; top: -90px;">
+       <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      
+     <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tourDates.html">Tour Dates</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
 
     <!-- define a container that will contain the entore form using the class = "container" (pre-defined by bootstrap) -->
 

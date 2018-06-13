@@ -7,8 +7,13 @@ src: url(fonts/GradoGradooNF.otf);
 
 }
 
-h1, footer {
+h1, footer {         /* only affects tour dates and contact page*/
   text-align: center;
+
+}
+
+h1{
+  color: white;
 }
 
 footer{
@@ -17,6 +22,7 @@ footer{
 
 h1, .des, .textW, .contactW{
   font-family: grado, san-serif, Helvetica;   /*gets the font defined in @font-face*/
+  color: white;
 }
 
 .des2{
@@ -63,6 +69,7 @@ a:active {
     left: 400px;
     bottom: 140px;
     display: inline;
+    
 
 }
 
