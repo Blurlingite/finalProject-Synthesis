@@ -1,0 +1,63 @@
+
+
+ @font-face {
+font-family: grado;
+src: url(fonts/GradoGradooNF.ttf);
+src: url(fonts/GradoGradooNF.otf);
+
+}
+
+h1, footer {
+	text-align: center;
+}
+
+footer{
+  color: white;
+}
+
+h1, .des{
+  font-family: grado, san-serif, Helvetica;   /*gets the font defined in @font-face*/
+}
+
+a{
+  font-family: grado, san-serif, Helvetica;
+  font-size: 22px;
+  color: #DAA520;
+}
+
+a:visited {
+	color: white;
+}
+a:hover {
+
+	font-weight: bold;
+	}
+
+a:active {
+
+	text-decoration: none;
+
+}
+
+/*centers links in navigation bar*/
+
+  .nb{
+      text-align: center;
+    }
+
+
+    
+    body{
+         background-image: url("images/redAndBlack.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+
+    .dropdown{
+    position: relative;
+    left: 400px;
+    bottom: 140px;
+    display: inline;
+
+}
+

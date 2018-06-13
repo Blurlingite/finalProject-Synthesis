@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <!-- use position: relative; to move elements around see: https://www.w3schools.com/cssref/pr_class_position.asp -->
+    
+    	<style>
+ 
+
+  .imgLeft, .imgRight {
+      position: relative;
+      width: 300px;
+      height: 300px;
+
+    }
+
+  /*  #main{
+      background-color: lightblue;
+    }*/
+ 
+    .lk1 {
+      padding-right:50px;
+      text-align: center;
+   
+    }
+
+/*description's header*/
+/*had to set width to 100% to center the h2 tag*/
+    .des{
+      text-align: center;
+      border-style: double;
+      width: 100%;
+      font-family: "serif",Times, Arial;
+    }
+
+   /*.jjj{*/
+   /*position: center;*/
+    /*width: 300px;
+    height: 300px;*/
+   /*}*/
+
+
+   
+
+	   </style>
+    
+  <div id = "title">
+
+    <title>Home</title>
+
+    <link rel = "shortcut icon" href = "images/restaurant.jpg">
+
+  </div>
+
+
+
+
+  <link href = "styles.css" rel = "stylesheet" type = "text/css" />
+
+  </head>
+  
+  <body>
+
+    <div class = "container nb col-sm-12">
+    
+    <h1>Synthesis</h1>
+
+
+    
+      <hr />
+    
+    <div id = "navigation">
+      
+<!-- use an unordered list to center nav bar text : https://stackoverflow.com/questions/19056725/how-to-center-align-text-in-navigation-bar-of-website-in-css -->
+
+      <span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> Home</a></span>
+      <span class ="nb col-sm-4">	<a class = "lk1" href = "tourDates.html" target = _blank>Tour Dates</a></span>
+		  <span class ="nb col-sm-4">	<a class = "lk1" href = "contactUs.html" target = _blank> Contact Us</a>
+		 		  </span><br>
+		  
+		  <hr />
+		
+    </div>
+
+
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Dropdown
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tourDates.html">Tour Dates</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    <div id = "main">
+
+      <div class = "container">
+    <div class = "image">
+
+        <img class ="nb col-sm-4 img-fluid imgLeft" src="images/restaurant.jpg" alt="pic of restaurant"   />
+
+        <div class = "nb col-sm-4"> 
+
+
+          <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
+          </iframe>  <!-- iframe embeds a youtube video (you need to follow the format: "https://www.youtube.com/embed/[video id]") The video id is the part after the "=" in the youtube video url
+
+          "allowfullscreen" lets you open the video to the entirre screen -->
+
+        </div>  
+
+        <img class ="nb col-sm-4 img-fluid imgRight" src="images/restaurant.jpg" alt="pic of restaurant"  />
+
+        <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+
+    </div>
+
+  </div>
+
+
+      
+      	<div class = "content">
+
+        <div class = "container">
+
+          <div class = "nb col-sm-4">
+      	   <h2 class = "des">About Us</h2> <br/> 
+          
+          
+
+              <p class = "des2">
+             INSERT TEXT HERE
+              </p>
+
+      	   </div>
+
+
+        <div class =  "nb col-sm-4 jjj">
+
+          <iframe class = "jjj" src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
+          </iframe>
+
+        </div>    
+
+         <div class = "nb col-sm-4">
+           <h2 class = "des">About Us</h2> <br/> 
+             
+
+        <p class = "des2">
+          INSERT TEXT HERE
+        </p>
+
+        </div>
+      </div>
+      	
+      <br/><br/>
+  
+    </div>
+
+  </div>
+
+
+
+    
+    <div id = "footer">
+
+			<footer class = "nb col-sm-12"> 
+				<p> PLACEHOLDER</p>
+				
+				<p> PLACEHOLDER</p>
+
+			</footer>
+
+		</div>
+  </div>
+
+
+
+    <!-- bootstrap -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+  </body>
+  
+</html>
+

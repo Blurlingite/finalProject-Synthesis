@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+.textW{
+
+  color: white;
+}
+
+.contactW{
+  text-align: center;
+  color: white;
+}
+
+    </style>
+
+  <div id = "title">
+
+    <title>Contact Us</title>
+  
+  </div>
+
+ 
+
+  <link href = "styles.css" rel = "stylesheet" type = "text/css" />
+
+  </head>
+
+  <body>
+
+    <h1>Synthesis</h1>
+
+    <hr />
+
+    <div id = "navigation">
+
+      <span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> <u>Home</u></a></span>
+      <span class ="nb col-sm-4"><a class = "lk1" href = "tourDates.html" target = _blank><u>Tour Dates</u></a></span>
+      <span class ="nb col-sm-4"><a class = "lk1" href = "contactUs.html" target = _blank> <u>Contact Us</u></a></span><br>
+
+       <hr />
+      
+
+
+    </div>
+
+    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tourDates.html">Tour Dates</a></li>
+    <li><a href="contactUs.html">Contact Us</a></li>
+  </ul>
+</div>
+
+    <!-- define a container that will contain the entore form using the class = "container" (pre-defined by bootstrap) -->
+
+     <div class = "container">
+      <h2><p class = "contactW"> Contact Us</p></h2>
+
+       <!-- specify a horizontal form and use "action" to tell it where (which file) to send the data after subnmitting -->
+
+      <form class = "form-horizontal" action = "/action_page.php">
+
+<!-- For each pair of label and text box:
+  1) Give a div with the class = "form-group" to envelop the first line of a form 
+
+  2) Give the label a class ="control-label" and a column specification (in this case we want it to take up 2 out of 12 columns so col-sm-2 (the sm means it will change when the screen size is small, see more info on w3schools) and a for = "xxxx" to specify which element the label belongs to (in this case it is for ="name" since this field will be accepting a Name) Finally, put the text for the label name (Name:) and close the label tag)
+
+  3) Now define how many columns the text box will take up by putting it in a div class(in this case we want 10 out of 12 columns so we would do this:
+  div class= "col-sm-10")
+
+  4) Now time to actually display the text box using an input type. 
+
+  a) Give it the class called form-control:
+  class = "form-control") 
+
+  b)  Then give it a type. The input type should match the for="xxxx" you gave to the label (in this case it would be "name" 
+
+  c) Then give it an id that matches the label's for (in this case, it is "name"
+
+  d) Now, give it a name that matchs the label''s for (in this case it is "name") 
+
+
+  e) Finally give it a placeholder that will display a hint in the message box of what the user should enter here, or not if you don't want one here.
+
+
+
+5) make sure you end all the divs you made and they line up with their starting divs. 
+
+6) Repeat steps 1-5 for each text field on the form.
+-->
+
+
+        <div class = "form-group">
+          <label class = "control-label col-sm-2 textW" for "name">Name: </label>
+          <div class = "col-sm-10">
+          <input class = "form-control" type = "name"  id = "name" name = "name" placeholder = "Enter name">
+          </div>
+        </div>
+
+          <div class = "form-group">
+            <label class = "control-label col-sm-2 textW" for = "email">Email:</label>
+            <div class = "col-sm-10">
+              <input class = "form-control"type = "email" id  "email" name = "email" placeholder = "Enter email">
+            </div>
+          </div>
+
+          <div class = "form-group">
+            <label class = "control-label col-sm-2 textW" for = "phone">Phone:</label>
+            <div class = "col-sm-10">
+              <input class = "form-control" type = "phone" id = "phone" name = "phone" placeholder = "Enter your phone number">
+            </div>
+          </div>
+
+
+<!-- How to make a dropdown menu within the form
+
+7) make a div with the class "dropdown"
+
+8) Make the label (see step 2 in above comments)
+
+9) Make the button
+
+a)  give it the class "btn btn-primary dropdown-toggle" to allow you to open a dropdown menu after clicking
+
+b) give it a type = "button" because it is a button you will click to do something
+
+c) give it the data-toggle = "dropdown" to allow the dropdown effect to apply to this class of "dropdown" (as shown by div class = "dropdown")
+
+d) Give it a name or don't. DO NOT close the button tag yet.
+
+e) give a span class = "caret" (you may be able to replace "span" with "p" or something) The .caret class creates the arrow that activates the dropdown. NOW you may close the button tag
+
+f) To actually build the dropdown menu use an unordered list (ul) with the class of "dropdown-menu" Populate the list with the choices you want. You can also insert links: right before the choice name open up an <a href = "insert url/file path here" and end the tag before the ending "li" tag. See this link on how to do this: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_dropdown-menu&stacked=h
+
+g) you can add the column amount after the classes of the "button" and "ul" to adjust the size pf the dropdown menu
+
+
+
+
+ -->
+
+
+
+          <br><br><br>
+
+          <div class="container">
+
+
+    <div class="form-group">
+      <label class = "control-label col-sm-2 textW" for="sel1">Reason for Inquiry (select one):</label>
+      <div class = "nb col-sm-10">
+      <select class="form-control" id="sel1">
+        <option></option>
+     
+         <option>Business Inquiry</option>
+         <option>Music Permissions</option>
+        <option>Ticket Refund</option>
+        <option>Other</option>
+      </select>
+      </div>
+    </div> 
+  
+</div>
+
+
+<!-- How to make a comment-like text box using the textarea tag: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_form_textarea&stacked=h
+
+
+Also, I added my own column specifications within the class -->
+
+      <div class = "form-group">
+        <label class = "control-label col-sm-2 textW" for = "addInfo">Message</label>
+        <div class = "col-sm-10">
+        <textarea class = "form-control" id = "addInfo" rows = "5"></textarea>
+        </div>
+      </div>
+
+
+   
+
+      <div class="col-sm-12 text-center"> 
+
+      <button type="button" class="btn-primary">Submit</button>
+
+      </div>
+
+<!-- END OF FORM div class = "container" -->
+
+    </div>
+
+    <div id = "footer">
+
+      <hr />
+
+      <footer>
+        <p> PLACEHOLDER</p>
+
+        <p> PLACEHOLDER</p>
+
+      </footer>
+
+    </div>
+
+
+
+       <!-- bootstrap -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+
+  </html>
