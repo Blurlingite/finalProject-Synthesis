@@ -15,8 +15,13 @@ footer{
   color: white;
 }
 
-h1, .des{
+h1, .des, .textW, .contactW{
   font-family: grado, san-serif, Helvetica;   /*gets the font defined in @font-face*/
+}
+
+.des2{
+  font-family: Bookman, Palatino, Courier New;  
+  color: white; 
 }
 
 a{
