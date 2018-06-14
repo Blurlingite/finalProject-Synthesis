@@ -25,6 +25,9 @@ h1, .des, .textW, .contactW{
   color: white;
 }
 
+.textW{
+  font-size: 20px;
+}
 .des2{
   font-family: Bookman, Palatino, Courier New;  
   color: white; 

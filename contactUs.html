@@ -3,12 +3,18 @@
   <head>
     <style>
 
-      #yyy{           /*styles the drop down button*/
+      #flame{           /*styles the drop down button*/
         background-color: #4a2231;
         border: none;
       }
       .contactW{
         text-align: center;
+      }
+
+      .rfi{
+        position: relative;
+        /*top: 13px;*/
+        right: 15px;
       }
 
     </style>
@@ -40,7 +46,7 @@
     </div>
 
     <div class="dropdown" style = "position:relative; left: 1014px; top: -150px;">
-      <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "flame" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       
       <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
       </button>
@@ -58,7 +64,7 @@
 
        <!-- specify a horizontal form and use "action" to tell it where (which file) to send the data after subnmitting -->
 
-      <form class = "form-horizontal" action = "/action_page.php">
+      <form class = "form-horizontal" action = "h.html">
 
 <!-- For each pair of label and text box:
   1) Give a div with the class = "form-group" to envelop the first line of a form 
@@ -138,8 +144,8 @@ g) you can add the column amount after the classes of the "button" and "ul" to a
 
 
           <div class="form-group">
-          <label class = "control-label col-sm-2 textW" for="sel1">Reason for Inquiry (select one):</label>
-            <div class = "nb col-sm-10">
+          <label class = "control-label col-sm-2 textW" for="sel1">Reason for Inquiry:</label>
+            <div class = "nb col-sm-10 rfi">
               <select class="form-control" id="sel1">
                 <option></option>
      
@@ -166,7 +172,11 @@ Also, I added my own column specifications within the class -->
 
           <div class="col-sm-12 text-center"> 
 
-            <button type="button" class="btn-primary">Submit</button>
+           <!--  <button type="button" class="btn-primary textW">Submit</button> -->
+
+            <input type="submit" class="btn-primary textW" value = "Submit"></input>
+
+            <!-- used input type = "submit" to let form be submitted after clicking submit button -->
 
           </div>
 
