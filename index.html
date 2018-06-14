@@ -1,77 +1,52 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
-
-    <!-- use position: relative; to move elements around see: https://www.w3schools.com/cssref/pr_class_position.asp -->
-    
-
-      <style>
-
-
+    <style>
 
       h1{
         color: white;
       }
 
+      .imgLeft, .imgRight {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        z-index: 2;        /*positions the left and right images on top of the center image. "2" is the elements' stack number. Elements with higher stack numbers will be on top of the ones with lower stack numbers */
+      }
 
-     /* #dd{position:relative;
-        right:5%;
+      .imgCenter{
+        position: absolute;
+        right: -100px;
+        width: 600px;
+        height: 300px;
+        z-index: 1; 
 
       }
- */
 
-  .imgLeft, .imgRight {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      z-index: 2;        /*positions the left and right images on top of the center image. "2" is the elements' stack number. Elements with higher stack numbers will be on top of the ones with lower stack numbers */
+      .lk1 {
+        text-align: center;
+      }
 
-    }
+      /*description's header*/
+      /*had to set width to 100% to center the h2 tag*/
+      .des{
+        text-align: center;
+        border-style: double;
+        width: 100%;
+        font-family: "serif",Times, Arial;
+      }
 
-    .imgCenter{
-      position: absolute;
-      right: -100px;
-      width: 600px;
-      height: 300px;
-      z-index: 1; 
+      .vid{
+        position: center;
+        top: 100px;
+      }
 
-    }
+      #yyy{           /*styles the drop down button*/
+        background-color: #4a2231;
+        border: none;
+      }
 
- 
-    .lk1 {
-      text-align: center;
-   
-    }
-
-/*description's header*/
-/*had to set width to 100% to center the h2 tag*/
-    .des{
-      text-align: center;
-      border-style: double;
-      width: 100%;
-      font-family: "serif",Times, Arial;
-    }
-
-   .vid{
-   position: center;
-   top: 100px;
-   /* width: 300px;
-    height: 300px;*/
-   }
-
-   #yyy{           /*styles the drop down button*/
-   /* background-color: #1d0d13*/
-    background-color: #4a2231;
-
-
-    border: none;
-   }
-
-
-   
-
-     </style>
+    </style>
     
   <div id = "title">
 
@@ -81,9 +56,6 @@
 
   </div>
 
-
-
-
   <link href = "styles.css" rel = "stylesheet" type = "text/css" />
 
   </head>
@@ -92,150 +64,118 @@
 
     <div class = "container nb col-sm-12">
     
-    <h1 style = "font-family: grado, san-serif, Helvetica;">Synthesis</h1>
+      <h1 style = "font-family: grado, san-serif, Helvetica;">Synthesis</h1>
 
 
     
-      <hr />
+        <hr />
     
-    <div id = "navigation">
+      <div id = "navigation">
       
-<!-- use an unordered list to center nav bar text : https://stackoverflow.com/questions/19056725/how-to-center-align-text-in-navigation-bar-of-website-in-css -->
+      <!-- use an unordered list to center nav bar text : https://stackoverflow.com/questions/19056725/how-to-center-align-text-in-navigation-bar-of-website-in-css -->
 
-      <span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> Home</a></span>
-      <span class ="nb col-sm-4"> <a class = "lk1" href = "tourDates.html" target = _blank>Tour Dates</a></span>
-      <span class ="nb col-sm-4"> <a class = "lk1" href = "contactUs.html" target = _blank> Contact Us</a>
-          </span><br>
+        <span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> Home</a></span>
+        <span class ="nb col-sm-4"> <a class = "lk1" href = "tourDates.html" target = _blank>Tour Dates</a></span>
+        <span class ="nb col-sm-4"> <a class = "lk1" href = "contactUs.html" target = _blank> Contact Us</a>
+        </span><br>
       
-      <hr />
+        <hr />
     
-    </div>
+       </div>
 
 
-    <div class="dropdown">
-      <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       
-     <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tourDates.html">Tour Dates</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-      </ul>
-    </div>
+        <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tourDates.html">Tour Dates</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <div id = "main">
 
       <div class = "container">
-    <div class = "image">
+        <div class = "image">
 
-        <img class ="nb col-sm-4 img-fluid imgLeft" src="images/synthesis.jpg" alt="Synthesis album art"   />
+          <img class ="nb col-sm-4 img-fluid imgLeft" src="images/synthesis.jpg" alt="Synthesis album art"   />
 
-        <div class = "nb col-sm-4" style = "background-color:green;"> 
-
+          <div class = "nb col-sm-4" style = "background-color:green;"> 
 
             <img class =" img-fluid imgCenter" src="images/Picture1.png" alt="Synthesis album art"   />
 
+          </div>  
 
-          <!-- <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
-          </iframe> -->
-            <!-- iframe embeds a youtube video (you need to follow the format: "https://www.youtube.com/embed/[video id]") The video id is the part after the "=" in the youtube video url
+          <img class ="nb col-sm-4 img-fluid imgRight" src="images/braveEnough2.jpg" alt="Brave Enough album art"  />
 
-          "allowfullscreen" lets you open the video to the entirre screen -->
+          <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
 
-        </div>  
+         </div>
 
-        <img class ="nb col-sm-4 img-fluid imgRight" src="images/braveEnough2.jpg" alt="Brave Enough album art"  />
-
-        <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
-
-    </div>
-
-  </div>
-
-
+      </div>
       
-        <div class = "content">
+      <div class = "content">
 
         <div class = "container">
 
           <div class = "nb col-sm-4">
-
-      	   
+  
            <h2 class = "des">About Evanescence</h2> <br/> 
 
-          
-          
-
               <p class = "des2">
-            Evanescence was founded by singer, pianist and songwriter Amy Lee and former lead guitarist and songwriter Ben Moody. The two met in 1994 at a youth camp in Little Rock, where Moody heard Lee playing a Meat Loaf song on the piano. The band became popular after performing in coffee shops around the Little Rock area. After experimenting with band names, such as Childish Intentions and Stricken, they decided on Evanescence, which means "disappearance" or "fading away" (from the word evanesce, which means "to disappear"). 
+                Evanescence was founded by singer, pianist and songwriter Amy Lee and former lead guitarist and songwriter Ben Moody. The two met in 1994 at a youth camp in Little Rock, where Moody heard Lee playing a Meat Loaf song on the piano. The band became popular after performing in coffee shops around the Little Rock area. After experimenting with band names, such as Childish Intentions and Stricken, they decided on Evanescence, which means "disappearance" or "fading away" (from the word evanesce, which means "to disappear"). 
 
-            <br><br>
+              <br><br>
 
-            The band released two EPs. The first is the self-titled Evanescence EP (1998), of which about 100 copies were made and distributed at the band's early live performances. The second is the Sound Asleep EP, also known as the Whisper EP (1999). There was also a third EP called Mystary EP (2003). For their first full-length demo CD, Origin (2000), about 2,500 copies were produced and sold to concert audiences. Origin and the EPs contain demo versions of some songs on their debut album, Fallen. During a radio interview, Lee and Moody encouraged fans to download the band's older songs from the Internet, rather than purchase them from online sources such as eBay where the material had been selling for over US $250.
+                The band released two EPs. The first is the self-titled Evanescence EP (1998), of which about 100 copies were made and distributed at the band's early live performances. The second is the Sound Asleep EP, also known as the Whisper EP (1999). There was also a third EP called Mystary EP (2003). For their first full-length demo CD, Origin (2000), about 2,500 copies were produced and sold to concert audiences. Origin and the EPs contain demo versions of some songs on their debut album, Fallen. During a radio interview, Lee and Moody encouraged fans to download the band's older songs from the Internet, rather than purchase them from online sources such as eBay where the material had been selling for over US $250.
 
-            <br><br>
+              <br><br>
 
-            On March 20, 2017, Lee spoke to AOL Build about her solo single, "Speak to Me"; during the interview, she spoke of "a new album" in the works by Evanescence, saying "We're working on something. [...] It's not just a straightforward 'next Evanescence album'," implying a stylistic change.[89] In a March 23 interview with Metal Hammer, Lee stated that "It's something unique, something complex, something a little bit beyond that – and it's definitely new territory for all of us." The album was intended for release later in 2017.
+                On March 20, 2017, Lee spoke to AOL Build about her solo single, "Speak to Me"; during the interview, she spoke of "a new album" in the works by Evanescence, saying "We're working on something. [...] It's not just a straightforward 'next Evanescence album'," implying a stylistic change.[89] In a March 23 interview with Metal Hammer, Lee stated that "It's something unique, something complex, something a little bit beyond that – and it's definitely new territory for all of us." The album was intended for release later in 2017.
 
-            <br><br>
+              <br><br>
 
-            In a Facebook post, Lee revealed that the new album is titled Synthesis. According to Lee, the album is an orchestral piece that contains instruments such as brass and other orchestral elements. She also revealed that David Campbell, who worked on all of the band's previous albums, would return to compose for the new project. Lee said that the album is about "orchestra and electronica", and that the band is taking selected songs from their previous albums and stripping out the rock guitars and drums, rebuilding them into a classical arrangement reminiscent of a soundtrack. The album contained two new original songs, one titled "Hi-Lo" starring Lindsey Stirling. The first recording session for Synthesis took place on May 23, 2017, and a remake of "Bring Me To Life" was released as a single on August 18. On August 15, the band announced that recording Synthesis was in its final stages. Evanescence toured with a full orchestra in late 2017 in support of the album, and tickets were sold starting on August 18. The band later toured across the US, Australia and Europe. Each ticket purchased came with a digital copy of Synthesis after its release. On September 14, 2017, the single "Imperfection" was officially released.
+                In a Facebook post, Lee revealed that the new album is titled Synthesis. According to Lee, the album is an orchestral piece that contains instruments such as brass and other orchestral elements. She also revealed that David Campbell, who worked on all of the band's previous albums, would return to compose for the new project. Lee said that the album is about "orchestra and electronica", and that the band is taking selected songs from their previous albums and stripping out the rock guitars and drums, rebuilding them into a classical arrangement reminiscent of a soundtrack. The album contained two new original songs, one titled "Hi-Lo" starring Lindsey Stirling. The first recording session for Synthesis took place on May 23, 2017, and a remake of "Bring Me To Life" was released as a single on August 18. On August 15, the band announced that recording Synthesis was in its final stages. Evanescence toured with a full orchestra in late 2017 in support of the album, and tickets were sold starting on August 18. The band later toured across the US, Australia and Europe. Each ticket purchased came with a digital copy of Synthesis after its release. On September 14, 2017, the single "Imperfection" was officially released.
 
-            <br><br>
+              <br><br>
 
-            In March 2018, Stirling and Evanescence announced a co-headlining tour together. The tour will also be accompanied by a live orchestra.
+                In March 2018, Stirling and Evanescence announced a co-headlining tour together. The tour will also be accompanied by a live orchestra.
               </p>
 
            </div>
 
 
-        <div class = "nb col-sm-4 vid">
+          <div class = "nb col-sm-4 vid">
 
-          <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
-          </iframe>
+            <!-- iframe embeds a youtube video (you need to follow the format: "https://www.youtube.com/embed/[video id]") The video id is the part after the "=" in the youtube video url
+
+            "allowfullscreen" lets you open the video to the entirre screen -->
+
+            <iframe src="https://www.youtube.com/embed/DRYFqwx7kv0" allowfullscreen>
+            </iframe>
 
             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
             <iframe src="https://www.youtube.com/embed/rgJeWR-dkQA" allowfullscreen>
-          </iframe>
+            </iframe>
 
-          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
             <iframe src="https://www.youtube.com/embed/aurI_4OxU-M" allowfullscreen>
-          </iframe>
+            </iframe>
 
-           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-           <iframe src="https://www.youtube.com/embed/C7GEhMee_u0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/C7GEhMee_u0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+          </div>   
 
-
-
-
-        </div>   
-
-
-
-         <div class = "nb col-sm-4">
-           <h2 class = "des">About Lindsey Stirling</h2> <br/> 
+          <div class = "nb col-sm-4">
+            <h2 class = "des">About Lindsey Stirling</h2> <br/> 
              
-
             <p class = "des2">
               Lindsey Stirling (born September 21, 1986) is an American violinist, dancer, performance artist, and composer. She presents choreographed violin performances, both live and in music videos found on her eponymous YouTube channel, which she created in 2007.
 
@@ -247,13 +187,13 @@
 
               Stirling has been named in Forbes magazine's 30 Under 30 In Music: The Class Of 2015. Forbes notes her quarter-finalist position on America's Got Talent season five in 2010, a No. 2 position on the Billboard 200 for her second album Shatter Me in 2014, and her 9 million subscribers on YouTube.
 
-               <br><br>
+              <br><br>
 
               Stirling's eponymous debut album was a commercial success in Europe, selling 200,000 copies in Germany, winning a platinum certification; three additional certifications were given by Austria, Switzerland and Poland. The debut album was nominated for the 2014 Billboard Music Awards for Top Dance/Electronic Albums. Stirling's second album Shatter Me won the 2015 Billboard Music Awards for Top Dance/Electronic Album.
 
               <br><br>
 
-             Stirling's first tour in 2012-2013 lasted almost a year with 122 dates around North America, Europe, Asia, and Australia. The Lindsey Stirling Tour began three days before the CD release of her first album, Lindsey Stirling. Her tour began in 2012 with dates in North America within the United States and Canada. At the beginning of 2013, Stirling continued her tour in Europe as a "test tour". Her official European leg kicked off in Russia on May 22, 2013. In August 2013, she continued her tour, adding dates around Asia and Australia. Finishing her tour, Stirling added a last date in the UK on September 4, 2013. The shows were a success in that 46 dates were sold out, and on Ticketmaster.com the audience gave a rating to the tour of 4.8 out of 5 stars.
+              Stirling's first tour in 2012-2013 lasted almost a year with 122 dates around North America, Europe, Asia, and Australia. The Lindsey Stirling Tour began three days before the CD release of her first album, Lindsey Stirling. Her tour began in 2012 with dates in North America within the United States and Canada. At the beginning of 2013, Stirling continued her tour in Europe as a "test tour". Her official European leg kicked off in Russia on May 22, 2013. In August 2013, she continued her tour, adding dates around Asia and Australia. Finishing her tour, Stirling added a last date in the UK on September 4, 2013. The shows were a success in that 46 dates were sold out, and on Ticketmaster.com the audience gave a rating to the tour of 4.8 out of 5 stars.
 
               <br><br>
 
@@ -264,41 +204,47 @@
               After a spending 9 months writing the Brave Enough album , Stirling started her tour in 2016 for the album. Stirling continued throughout Europe and Latin America with her last show in Guadalajara, Mexico.
             </p>
 
+          </div>
         </div>
-      </div>
         
       <br/><br/>
   
-    </div>
+      </div>
 
   </div>
 
 
 
-    
-    <div id = "footer">
-
-      <footer class = "nb col-sm-12"> 
-        <p> PLACEHOLDER</p>
-        
-        <p> PLACEHOLDER</p>
-
-      </footer>
-
-    </div>
-  </div>
 
 
+  <!-- </div>  -->  <!-- uneeded -->
 
     <!-- bootstrap -->
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
   </body>
+
+    <div id = "footer">
+
+      <hr />
+
+      <footer class = "col-sm-12"> 
+        <p> Site designed by Vishnu Dawah &copy; 2018</p>
+
+        <p> Credit is given to Evanescence, Lindsey Stirling, and related parties for all images and content</p>
+
+      </footer>
+
+      <br><br><br> <br>        
+
+    </div>
+
+
   
 </html>
 

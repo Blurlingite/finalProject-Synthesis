@@ -3,16 +3,13 @@
   <head>
     <style>
 
-   #yyy{           /*styles the drop down button*/
-   /* background-color: #1d0d13*/
- background-color: #4a2231;
-
-
-    border: none;
-   }
-.contactW{
-  text-align: center;
-}
+      #yyy{           /*styles the drop down button*/
+        background-color: #4a2231;
+        border: none;
+      }
+      .contactW{
+        text-align: center;
+      }
 
     </style>
 
@@ -21,8 +18,6 @@
     <title>Contact Us</title>
   
   </div>
-
- 
 
   <link href = "styles.css" rel = "stylesheet" type = "text/css" />
 
@@ -40,16 +35,14 @@
       <span class ="nb col-sm-4"><a class = "lk1" href = "tourDates.html" target = _blank><u>Tour Dates</u></a></span>
       <span class ="nb col-sm-4"><a class = "lk1" href = "contactUs.html" target = _blank> <u>Contact Us</u></a></span><br>
 
-       <hr />
+      <hr />
       
-
-
     </div>
 
-     <div class="dropdown" style = "position:relative; left: 1014px; top: -150px;">
-       <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <div class="dropdown" style = "position:relative; left: 1014px; top: -150px;">
+      <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       
-     <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
+      <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <li><a href="index.html">Home</a></li>
@@ -58,9 +51,9 @@
       </ul>
     </div>
 
-    <!-- define a container that will contain the entore form using the class = "container" (pre-defined by bootstrap) -->
+    <!-- define a container that will contain the entire form using the class = "container" (pre-defined by bootstrap) -->
 
-     <div class = "container">
+    <div class = "container">
       <h2><p class = "contactW"> Contact Us</p></h2>
 
        <!-- specify a horizontal form and use "action" to tell it where (which file) to send the data after subnmitting -->
@@ -86,10 +79,7 @@
 
   d) Now, give it a name that matchs the label''s for (in this case it is "name") 
 
-
   e) Finally give it a placeholder that will display a hint in the message box of what the user should enter here, or not if you don't want one here.
-
-
 
 5) make sure you end all the divs you made and they line up with their starting divs. 
 
@@ -104,19 +94,19 @@
           </div>
         </div>
 
-          <div class = "form-group">
-            <label class = "control-label col-sm-2 textW" for = "email">Email:</label>
-            <div class = "col-sm-10">
-              <input class = "form-control"type = "email" id  "email" name = "email" placeholder = "Enter email">
-            </div>
+        <div class = "form-group">
+          <label class = "control-label col-sm-2 textW" for = "email">Email:</label>
+          <div class = "col-sm-10">
+            <input class = "form-control"type = "email" id  "email" name = "email" placeholder = "Enter email">
           </div>
+        </div>
 
-          <div class = "form-group">
-            <label class = "control-label col-sm-2 textW" for = "phone">Phone:</label>
-            <div class = "col-sm-10">
-              <input class = "form-control" type = "phone" id = "phone" name = "phone" placeholder = "Enter your phone number">
-            </div>
+        <div class = "form-group">
+          <label class = "control-label col-sm-2 textW" for = "phone">Phone:</label>
+          <div class = "col-sm-10">
+            <input class = "form-control" type = "phone" id = "phone" name = "phone" placeholder = "Enter your phone number">
           </div>
+        </div>
 
 
 <!-- How to make a dropdown menu within the form
@@ -140,56 +130,45 @@ e) give a span class = "caret" (you may be able to replace "span" with "p" or so
 f) To actually build the dropdown menu use an unordered list (ul) with the class of "dropdown-menu" Populate the list with the choices you want. You can also insert links: right before the choice name open up an <a href = "insert url/file path here" and end the tag before the ending "li" tag. See this link on how to do this: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_dropdown-menu&stacked=h
 
 g) you can add the column amount after the classes of the "button" and "ul" to adjust the size pf the dropdown menu
-
-
-
-
  -->
-
-
 
           <br><br><br>
 
-          <div class="container">
+        <div class="container">
 
 
-    <div class="form-group">
-      <label class = "control-label col-sm-2 textW" for="sel1">Reason for Inquiry (select one):</label>
-      <div class = "nb col-sm-10">
-      <select class="form-control" id="sel1">
-        <option></option>
+          <div class="form-group">
+          <label class = "control-label col-sm-2 textW" for="sel1">Reason for Inquiry (select one):</label>
+            <div class = "nb col-sm-10">
+              <select class="form-control" id="sel1">
+                <option></option>
      
-         <option>Business Inquiry</option>
-         <option>Music Permissions</option>
-        <option>Ticket Refund</option>
-        <option>Other</option>
-      </select>
-      </div>
-    </div> 
-  
-</div>
-
+                <option>Business Inquiry</option>
+                <option>Music Permissions</option>
+                <option>Ticket Refund</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div> 
+        </div>
 
 <!-- How to make a comment-like text box using the textarea tag: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_form_textarea&stacked=h
 
 
 Also, I added my own column specifications within the class -->
 
-      <div class = "form-group">
-        <label class = "control-label col-sm-2 textW" for = "addInfo">Message:</label>
-        <div class = "col-sm-10">
-        <textarea class = "form-control" id = "addInfo" rows = "5"></textarea>
-        </div>
-      </div>
+          <div class = "form-group">
+            <label class = "control-label col-sm-2 textW" for = "addInfo">Message:</label>
+              <div class = "col-sm-10">
+                <textarea class = "form-control" id = "addInfo" rows = "5"></textarea>
+              </div>
+          </div>
 
+          <div class="col-sm-12 text-center"> 
 
-   
+            <button type="button" class="btn-primary">Submit</button>
 
-      <div class="col-sm-12 text-center"> 
-
-      <button type="button" class="btn-primary">Submit</button>
-
-      </div>
+          </div>
 
 <!-- END OF FORM div class = "container" -->
 
@@ -200,15 +179,14 @@ Also, I added my own column specifications within the class -->
       <hr />
 
       <footer>
-        <p> PLACEHOLDER</p>
+        <p> Site designed by Vishnu Dawah &copy; 2018</p>
 
-        <p> PLACEHOLDER</p>
+        <p> Credit is given to Evanescence, Lindsey Stirling, and related parties for all images and content</p>
 
       </footer>
 
+        <br>
     </div>
-
-
 
        <!-- bootstrap -->
 
@@ -219,5 +197,4 @@ Also, I added my own column specifications within the class -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </body>
-
-  </html>
+</html>

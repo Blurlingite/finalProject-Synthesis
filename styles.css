@@ -40,14 +40,11 @@ a:visited {
   color: white;
 }
 a:hover {
-
   font-weight: bold;
-  }
+}
 
 a:active {
-
   text-decoration: none;
-
 }
 
 /*centers links in navigation bar*/
@@ -55,21 +52,17 @@ a:active {
   .nb{
       text-align: center;
     }
+ 
+  body{
+      background-image: url("images/redAndBlack.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 
-
-    
-    body{
-         background-image: url("images/redAndBlack.jpg");
-         background-repeat: no-repeat;
-         background-size: cover;
-    }
-
-    .dropdown{
+  .dropdown{
     position: relative;
     left: 400px;
     bottom: 150px;
     display: inline;
-    
-
-}
+  }
 

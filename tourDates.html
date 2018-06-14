@@ -1,99 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-  
-  <head>
-    
+<html> 
+  <head>  
     <style>
-    
-
-    /*  .center {
-       margin-left:auto;
-       margin-right:auto;
-       background-color: dodgerblue;
-   	}*/
       
-      th {
-      	font-size: 20px;
-      	text-align: center;
-      
-
+    th {
+    	font-size: 20px;
+    	text-align: center;
     }
 
-    
-
-      tr {
-      	text-align:center;
+    tr {
+    	text-align:center;
     }
 
-      td {
-      	text-align:center;
+    td {
+    	text-align:center;
     }
 
-     #yyy{           /*styles the drop down button*/
-   /* background-color: #1d0d13*/
- background-color: #4a2231;
+    #yyy{           /*styles the drop down button*/
+   
+ 		background-color: #4a2231;
+    	border: none;
+    }
 
+	#tdHeader{
+		text-align: center;
+	}
 
-    border: none;
-   }
+	#thSub{
+		text-align: center;
+	}
 
-#tdHeader{
-	text-align: center;
-}
+	#thSub2{
+		text-align: center;
+	}
 
-#thSub{
-	text-align: center;
-}
+	.withinTable{
+		border: 12px solid black;
+		position: relative;
+		top: 700px;
+	}
 
-#thSub2{
-	text-align: center;
-}
-
-
-.withinTable{
-	border: 12px solid black;
-	position: relative;
-	top: 700px;
-}
-
-
-
-/* styles the th tags of the bootstrap defined table that has the "table" class */
-
- /*     .table th  {   
-   text-align: center;
-	}*/
-
-  .table thead {          /*styles the Tour Date table's header (the container only) */
-   background-color: #42f47d; 
-
+  	.table thead {   /*styles the Tour Date table's header (the container only) */
+   		/*background-color: #42f47d; */
+   		border: 2px solid white;
 	}
     
-  .lk1{
-
-    text-align: center;
-    	
+  	.lk1{
+    	text-align: center; 	
  	}
 
     /*Remove table borders for bootstrap tables*/
 
    .table.table-borderless td, .table.table-borderless th {
-    border: none;
-    color: white;
-}
-
+    	border: none;
+    	color: white;
+	}
 
     </style>
     
-  <div id = "title">
+  	<div id = "title">
 
-    <title>Tour Dates</title>
+   	 <title>Tour Dates</title>
 
-  </div>
-
-
-
+  	</div>
 
   <link href = "styles.css" rel = "stylesheet" type = "text/css" />
 
@@ -101,265 +70,203 @@
   
   <body>
     
-   <h1 style = " font-family: grado, san-serif, Helvetica;">Synthesis</h1>
+    <h1 style = " font-family: grado, san-serif, Helvetica;">Synthesis</h1>
     
-   	 <hr />
+   	<hr />
     
     <div id = "navigation">
       
-      <span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> Home</a></span>
+    	<span class ="nb col-sm-4"><a class = "lk1" href = "index.html" target = _blank> Home</a></span>
     	<span class ="nb col-sm-4"><a class = "lk1" href = "tourDates.html" target = _blank>Tour Dates</a></span>
-		 	<span class ="nb col-sm-4"><a class = "lk1" href = "contactUs.html" target = _blank> Contact Us</a></span><br>
-		 		  
-	<hr />
+		<span class ="nb col-sm-4"><a class = "lk1" href = "contactUs.html" target = _blank> Contact Us</a></span>
+
+		<br>	 		  
+		<hr />
 
     </div>
 
-  
-
-   <div class="dropdown" style = "position:relative; left: 1014px; top: -148px;">
-       <button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  	<div class="dropdown" style = "position:relative; left: 1014px; top: -148px;">
+    	<button class="btn btn-default dropdown-toggle glyphicon glyphicon-fire" style = "font-size:30px;color:#930001" id = "yyy" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       
-     <!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tourDates.html">Tour Dates</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-      </ul>
+    	<!--  <span class="caret"></span> --> <!-- makes the arrow (not needed) -->
+    	</button>
+      	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="tourDates.html">Tour Dates</a></li>
+        	<li><a href="contactUs.html">Contact Us</a></li>
+      	</ul>
     </div>
-
 
     <div id = "main">
 
   	<div class = "content">
-
-<!-- 	<div class = "image withinTable">
-  			<img class ="nb col-sm-4 img-fluid imgLeft" src="images/restaurant.jpg" alt="pic of restaurant"   />
-
-  	</div> -->
  
-<!-- Tour Dates table
-  -->
+		<div class = "container">
+			<div id = "myCarousel" class = "carousel slide" data-ride = "carousel">
 
+				<ol class = "carousel-indicators">
+					<li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+					<li data-target = "#myCarousel" data-slide-to = "1"></li>
+					<li data-target = "#myCarousel" data-slide-to = "2"></li>
+					<li data-target = "#myCarousel" data-slide-to = "3"></li>
+					<li data-target = "#myCarousel" data-slide-to = "4"></li>
+					<li data-target = "#myCarousel" data-slide-to = "5"></li>
+				</ol>
 
-
-
-
-
-
-<div class = "container">
-		<div id = "myCarousel" class = "carousel slide" data-ride = "carousel">
-
-			<ol class = "carousel-indicators">
-				<li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
-				<li data-target = "#myCarousel" data-slide-to = "1"></li>
-				<li data-target = "#myCarousel" data-slide-to = "2"></li>
-				<li data-target = "#myCarousel" data-slide-to = "3"></li>
-				<li data-target = "#myCarousel" data-slide-to = "4"></li>
-				<li data-target = "#myCarousel" data-slide-to = "5"></li>
-			</ol>
-
-			<div class = "carousel-inner">
-				<div class = "item active">
-					<img src = "images/amyAndLinds.png" alt = "Burger and Fries" width = "fill" height = "fill">
-					
-				</div>
-
-				<div class = "item">
-					<img src = "images/hollywoodCasinoAmp.png" alt = "Hollywood Casino Ampitheater" width = "fill" height = "fill">
-					<div class = "carousel-caption">
-						<h3>Hollywood Casino Ampitheater</h3>
+				<div class = "carousel-inner">
+					<div class = "item active">
+						<img src = "images/amyAndLinds.png" alt = "Burger and Fries" width = "fill" height = "fill">			
 					</div>
-				</div>
-
-				<div class = "item">
-					<img src = "images/ruoffHMMC.jpg" alt = "Ruoff Home Mortgage Music Center" width = "fill" height = "fill">
-					<div class = "carousel-caption">
-						<h3>Ruoff Home Mortgage Music Center</h3>
-					</div>
-
-
-				</div>
-
-				<div class = "item">
-					<img src = "images/kresgeAudiotorium.png" alt = "Kresge Auditorium Interlochen" width = "fill" height = "fill">
-					<div class = "carousel-caption">
-						<h3>Kresge Auditorium Interlochen</h3>
-					</div>
-
-					
-				</div>
-
-
-
-
 
 					<div class = "item">
-					<img src = "images/xfinityCenter.png" alt = "Italian Sausage and Peppers" width = "fill" height = "fill">
-					<div class = "carousel-caption">
-						<h3>Xfinity Center Mansfield</h3>
+						<img src = "images/hollywoodCasinoAmp.png" alt = "Hollywood Casino Ampitheater" width = "fill" height = "fill">
+							<div class = "carousel-caption">
+								<h3>Hollywood Casino Ampitheater</h3>
+							</div>
 					</div>
-				</div>
 
-				<div class = "item">
-					<img src = "images/brisketSandwichAndFries.jpg" alt = "Italian Sausage and Peppers" width = "fill" height = "fill">
-				</div>
+					<div class = "item">
+						<img src = "images/ruoffHMMC.jpg" alt = "Ruoff Home Mortgage Music Center" width = "fill" height = "fill">
+							<div class = "carousel-caption">
+								<h3>Ruoff Home Mortgage Music Center</h3>
+							</div>
+					</div>
+
+					<div class = "item">
+						<img src = "images/kresgeAudiotorium.png" alt = "Kresge Auditorium Interlochen" width = "fill" height = "fill">
+							<div class = "carousel-caption">
+								<h3>Kresge Auditorium Interlochen</h3>
+							</div>					
+					</div>
+
+					<div class = "item">
+						<img src = "images/xfinityCenter.png" alt = "Italian Sausage and Peppers" width = "fill" height = "fill">
+							<div class = "carousel-caption">
+								<h3>Xfinity Center Mansfield</h3>
+							</div>
+					</div>
+
+					<div class = "item">
+						<img src = "images/brisketSandwichAndFries.jpg" alt = "Italian Sausage and Peppers" width = "fill" height = "fill">
+					</div>
 			</div>
 
 			<a class = "left carousel-control" href = "#myCarousel" data-slide = "prev">
 
-
-				
-
-				     <span class="glyphicon glyphicon-chevron-left"></span>
-     				 <span class="sr-only">Previous</span>
+				<span class="glyphicon glyphicon-chevron-left"></span>
+     			<span class="sr-only">Previous</span>
     		</a>
+
     		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-      				<span class="glyphicon glyphicon-chevron-right"></span>
-      				<span class="sr-only">Next</span>
+      			<span class="glyphicon glyphicon-chevron-right"></span>
+      			<span class="sr-only">Next</span>
     		</a>
   		</div>
-		</div>
+	</div>
 
-			
-	
-				<br/><br/>
+	<br/><br/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Tour Dates table  -->
 
 			<table class = "table table-borderless">
-
-<!-- <img class ="nb col-sm-4 img-fluid " src="images/restaurant.jpg" alt="pic of restaurant"   /> -->
 
 				<thead> 
 					<th id = "tdHeader" colspan = "2">Tour Dates</th>		
 				</thead>
-<!-- try to use a position: sticky here so the location and date can be seen when you scroll -->
+				<!-- try to use a position: sticky here so the location and date can be seen when you scroll -->
 
 					<th id = "thSub">Location</th></div>
 					<th id = "thSub2">Date</th>
 
-
-		   			 <tr>
+		   			<tr>
 	    				<td>Starlight Theatre Kansas City, MO</td>
 	    				<td>JUL 6, 2018</td>
-	 		 		 </tr>
+	 		 		</tr>
 
 
-		   			 <tr>
-	    				<td>Hollywood Casino Ampitheater St. Louis, MO</td>
-	    				<td>JUL 7, 2018</td>
-	 		 		 </tr>
-
-
-		   			 <tr>
-	    				<td>DTE Energy Music Theater Detroit, MI</td>
-	    				<td>JUL 9, 2018</td>
-	 		 		 </tr>
-
-
-		   			 <tr>
-	    				<td>Ravinia Festival Highland Park, IL</td>
-	    				<td>JUL 10, 2018</td>
-	 		 		 </tr>
-
-
-	 		 		  <tr>
-	    				<td>Ruoff Home Mortgage Music Center Noblesville, IN</td>
-	    				<td>JUL 12, 2018</td>
-	 		 		 </tr>
-
-
-	 		 		  <tr>
-	    				<td>Kresge Auditorium Interlochen, MI</td>
-	    				<td>JUL 13, 2018</td>
-	 		 		 </tr>
-
-
-	 		 		  <tr>
-	    				<td>Riverbend Music Center Cincinnati, OH</td>
-	    				<td>JUL 14, 2018</td>
-	 		 		 </tr>
-
-
-	 		 		   <tr>
-	    				<td>BB&T Pavilion Camden, NJ</td>
-	    				<td>JUL 17, 2018</td>
-	 		 		 </tr>
-
-
-	 		 		   <tr>
-	    				<td>Xfinity Center Mansfield, MA</td>
-	    				<td>JUL 18, 2018</td>
-	 		 		 </tr>
-
-
-	 		 		   <tr>
-	    				<td>PNC Music Pavilion Charlotte, NC</td>
-	    				<td>JUL 20, 2018</td>
-	 		 		 </tr>
-
-
-
- 					<tr>
+		   			<tr>
 	    				<td>Hollywood Casino Ampitheater St. Louis, MO</td>
 	    				<td>JUL 7, 2018</td>
 	 		 		</tr>
 
-	 		 		 <tr>
+
+		   			<tr>
+	    				<td>DTE Energy Music Theater Detroit, MI</td>
+	    				<td>JUL 9, 2018</td>
+	 		 		</tr>
+
+
+		   			<tr>
+	    				<td>Ravinia Festival Highland Park, IL</td>
+	    				<td>JUL 10, 2018</td>
+	 		 		</tr>
+
+
+	 		 		<tr>
+	    				<td>Ruoff Home Mortgage Music Center Noblesville, IN</td>
+	    				<td>JUL 12, 2018</td>
+	 		 		</tr>
+
+
+	 		 		<tr>
+	    				<td>Kresge Auditorium Interlochen, MI</td>
+	    				<td>JUL 13, 2018</td>
+	 		 		</tr>
+
+
+	 		 		<tr>
+	    				<td>Riverbend Music Center Cincinnati, OH</td>
+	    				<td>JUL 14, 2018</td>
+	 		 		</tr>
+
+	 		 		<tr>
+	    				<td>BB&T Pavilion Camden, NJ</td>
+	    				<td>JUL 17, 2018</td>
+	 		 		</tr>
+
+
+	 		 		<tr>
+	    				<td>Xfinity Center Mansfield, MA</td>
+	    				<td>JUL 18, 2018</td>
+	 		 		</tr>
+
+
+	 		 	    <tr>
+	    				<td>PNC Music Pavilion Charlotte, NC</td>
+	    				<td>JUL 20, 2018</td>
+	 		 		</tr>
+
+
+
+
+
+
+
+
+ 					<tr>
+	    				<td>
+						Coastal Credit Union Music Park at Walnut Creek
+						Raleigh, NC</td>
+	    				<td>JUL 21, 2018</td>
+	 		 		</tr>
+
+	 		 		<tr>
+	    				<td>Hollywood Casino Ampitheater St.Louis, MO</td>
+	    				<td>JUL 7, 2018</td>
+	 		 		</tr>
+
+	 		 		<tr>
+	    				<td>Jiffy Lube Live Bristow, VA</td>
+	    				<td>JUL 24, 2018</td>
+	 		 		</tr>
+
+	 		 		<tr>
 	    				<td>Hollywood Casino Ampitheater St. Louis, MO</td>
 	    				<td>JUL 7, 2018</td>
-	 		 		 </tr>
-
-	 		 		  <tr>
-	    				<td>Hollywood Casino Ampitheater St. Louis, MO</td>
-	    				<td>JUL 7, 2018</td>
-	 		 		 </tr>
-
-	 		 		  <tr>
-	    				<td>Hollywood Casino Ampitheater St. Louis, MO</td>
-	    				<td>JUL 7, 2018</td>
-	 		 		 </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	 		 	
-
+	 		 		</tr>	 		 	
 			</table>
 
 	</div>
-
-
 
 		<br/><br/><br/><br/>
 
@@ -379,11 +286,13 @@
 		<hr />
 		
 		<footer class = "col-sm-12"> 
-				<p> PLACEHOLDER</p>
-				
-				<p> PLACEHOLDER</p>
+
+			<p> Site designed by Vishnu Dawah &copy; 2018</p>
+
+       		<p> Credit is given to Evanescence, Lindsey Stirling, and related parties for all images and content</p>
 
 		</footer>
+		   <br><br><br> <br> 
 
 	</div>
 		
